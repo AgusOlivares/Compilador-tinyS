@@ -1,6 +1,6 @@
 package LexicalAnalizer;
 public class Token {
-    final TokenType type;
+    final TokenTypes type;
     final String lexema;
     final int line;
     final int column;
@@ -14,7 +14,7 @@ public class Token {
      * @param line   La línea en la que aparece el token.
      */
 
-    public Token(TokenType type, String lexema, int column, int line) {
+    public Token(TokenTypes type, String lexema, int column, int line) {
         this.type = type;
         this.lexema = lexema;
         this.column = column;
@@ -27,7 +27,7 @@ public class Token {
      * @return El tipo de token.
      */
 
-    public TokenType getType() {
+    public TokenTypes getType() {
         return type;
     }
 
